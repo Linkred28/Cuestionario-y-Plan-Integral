@@ -1,4 +1,3 @@
-
 import React from 'react';
 import type { EjeKey, FrameworkEje } from '../types';
 import { FRAMEWORK_EJES } from '../constants';
@@ -9,9 +8,9 @@ interface FrameworkItemProps {
 }
 
 const FrameworkItem: React.FC<FrameworkItemProps> = ({ eje, isActive }) => {
-  const baseClasses = 'mb-4 p-4 rounded-lg border transition-all duration-300 cursor-default';
-  const inactiveClasses = 'bg-white border-gray-200';
-  const activeClasses = 'bg-yellow-400 border-yellow-400 text-gray-800 shadow-lg shadow-yellow-400/30';
+  const baseClasses = 'mb-4 p-4 rounded-lg border transition-all duration-300 ease-in-out cursor-default';
+  const inactiveClasses = 'bg-white border-gray-200 hover:shadow-lg hover:border-blue-300 hover:scale-[1.03]';
+  const activeClasses = 'bg-yellow-400 border-yellow-400 text-gray-800 shadow-xl shadow-yellow-400/40 scale-[1.03]';
 
   return (
     <div data-eje={eje.key} className={`${baseClasses} ${isActive ? activeClasses : inactiveClasses}`}>

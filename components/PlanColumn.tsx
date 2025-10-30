@@ -13,10 +13,10 @@ const TabSelector: React.FC<TabSelectorProps> = ({ activeCategory, onCategoryCha
       <button
         key={key}
         onClick={() => onCategoryChange(key)}
-        className={`py-2 px-4 font-bold border-b-4 transition-colors duration-300 ${
+        className={`py-3 px-5 font-bold border-b-4 transition-all duration-300 ease-in-out rounded-t-lg -mb-[2px] ${
           activeCategory === key
-            ? 'text-blue-600 border-blue-600'
-            : 'text-gray-500 border-transparent hover:text-blue-500'
+            ? 'text-blue-600 border-blue-600 bg-white'
+            : 'text-gray-500 border-transparent hover:text-blue-500 hover:bg-gray-100'
         }`}
       >
         {icon} {label}
@@ -44,7 +44,7 @@ const PlanTask: React.FC<PlanTaskProps> = ({ tarea, isActive, onMouseEnter, onMo
     data-ejes={tarea.ejes.join(' ')}
     onMouseEnter={onMouseEnter}
     onMouseLeave={onMouseLeave}
-    className={`plan-tarea mb-8 p-5 bg-white rounded-lg shadow-sm border-2 transition-all duration-300 cursor-pointer ${isActive ? 'bg-yellow-100 border-yellow-400' : 'border-transparent'}`}
+    className={`plan-tarea mb-8 p-5 bg-white rounded-lg shadow-md border-2 transition-all duration-300 ease-in-out cursor-pointer hover:shadow-xl hover:-translate-y-1 ${isActive ? 'bg-yellow-100 border-yellow-400 -translate-y-1 shadow-xl' : 'border-transparent'}`}
   >
     <strong className="block text-lg mb-2 text-blue-600">{tarea.name}</strong>
     <p className="text-base leading-relaxed text-gray-700">
