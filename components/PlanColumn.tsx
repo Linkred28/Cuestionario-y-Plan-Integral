@@ -1,4 +1,3 @@
-
 import React, { useMemo, useState } from 'react';
 import type { CategoryKey, EjeKey, PlanTarea } from '../types';
 import { PLAN_DATA, TABS } from '../constants';
@@ -111,7 +110,7 @@ export const PlanColumn: React.FC<PlanColumnProps> = ({ activeCategory, onCatego
           <p className="max-w-2xl mx-auto text-gray-600">
             El <strong>Framework</strong> es el QUÉ y el POR QUÉ. El <strong>Plan de Trabajo</strong> es el CÓMO. Cada tarea se justifica al construir un Eje Estratégico.
           </p>
-          <p className="mt-4 text-sm text-gray-500">&copy; 2025 Astra Mx Consulting. Todos los derechos reservados.</p>
+          <p className="mt-4 text-sm text-gray-500">&copy; 2025 Metodiko Consultoría + Transformación Digital. Todos los derechos reservados.</p>
       </footer>
     </main>
   );

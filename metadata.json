@@ -1,5 +1,5 @@
 {
-  "name": "Astra Mx Methodology Visualizer",
-  "description": "An interactive web application that visualizes the connection between Astra Mx's 6 strategic framework axes and their detailed work plans for different service categories. Features a scroll-to-illuminate interface to show traceability.",
+  "name": "Metodiko Methodology Visualizer",
+  "description": "An interactive web application that visualizes the connection between Metodiko's 6 strategic framework axes and their detailed work plans for different service categories. Features a scroll-to-illuminate interface to show traceability.",
   "requestFramePermissions": []
 }
