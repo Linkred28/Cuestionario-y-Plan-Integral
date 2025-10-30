@@ -75,7 +75,7 @@ export const PlanColumn: React.FC<PlanColumnProps> = ({ activeCategory, onCatego
   };
 
   return (
-    <main className="lg:ml-[380px] flex-grow p-6 lg:p-10">
+    <main className="lg:ml-[460px] flex-grow p-6 lg:p-10">
       <h1 className="text-4xl font-extrabold text-slate-100 mb-6">El CÓMO: Plan de Ejecución y Trazabilidad</h1>
       
       <TabSelector activeCategory={activeCategory} onCategoryChange={handleCategoryChange} />

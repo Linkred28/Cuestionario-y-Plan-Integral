@@ -36,7 +36,7 @@ interface FrameworkColumnProps {
 
 export const FrameworkColumn: React.FC<FrameworkColumnProps> = ({ activeEjes }) => {
   return (
-    <aside className="lg:w-[380px] lg:fixed lg:top-0 lg:left-0 lg:h-screen bg-white p-6 lg:p-10 shadow-lg lg:overflow-y-auto w-full">
+    <aside className="lg:w-[460px] lg:fixed lg:top-0 lg:left-0 lg:h-screen bg-white p-6 lg:p-10 shadow-lg lg:overflow-y-auto w-full">
       <h2 className="text-2xl font-bold text-gray-900 mt-0 mb-2 text-center lg:text-left">
         Framework: Los 6 Ejes Estratégicos (El QUÉ)
       </h2>
