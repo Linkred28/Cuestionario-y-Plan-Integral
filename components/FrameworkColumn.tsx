@@ -8,7 +8,7 @@ interface FrameworkItemProps {
 }
 
 const FrameworkItem: React.FC<FrameworkItemProps> = ({ eje, isActive }) => {
-  const baseClasses = 'mb-4 p-4 rounded-lg border transition-all duration-300 ease-in-out cursor-default';
+  const baseClasses = 'mb-3 p-3 rounded-lg border transition-all duration-300 ease-in-out cursor-default';
   const inactiveClasses = 'bg-white border-gray-200 hover:shadow-lg hover:border-blue-300 hover:scale-[1.03]';
   const activeClasses = 'bg-yellow-400 border-yellow-400 text-gray-800 shadow-xl shadow-yellow-400/40 scale-[1.03]';
 
@@ -36,11 +36,11 @@ interface FrameworkColumnProps {
 
 export const FrameworkColumn: React.FC<FrameworkColumnProps> = ({ activeEjes }) => {
   return (
-    <aside className="lg:w-[460px] lg:fixed lg:top-0 lg:left-0 lg:h-screen bg-white p-6 lg:p-10 shadow-lg lg:overflow-y-auto w-full">
+    <aside className="lg:w-[420px] lg:fixed lg:top-0 lg:left-0 lg:h-screen bg-white p-6 shadow-lg lg:overflow-y-auto w-full">
       <h2 className="text-2xl font-bold text-gray-900 mt-0 mb-2 text-center lg:text-left">
         Framework: Los 6 Ejes Estratégicos (El QUÉ)
       </h2>
-      <p className="text-sm text-gray-600 mb-6">
+      <p className="text-sm text-gray-600 mb-4">
         Nuestro <strong>ADN</strong> de consultoría. El Plan de Trabajo está diseñado para <strong>construir</strong> o <strong>diagnosticar</strong> estos 6 pilares.
       </p>
       
@@ -50,7 +50,7 @@ export const FrameworkColumn: React.FC<FrameworkColumnProps> = ({ activeEjes }) 
         ))}
       </div>
       
-      <div className="mt-8 p-4 bg-gray-100 border-gray-200 border rounded-lg text-sm">
+      <div className="mt-6 p-4 bg-gray-100 border-gray-200 border rounded-lg text-sm">
         <strong>Instrucción:</strong> Mueve el ratón sobre las tareas de la derecha para ver qué ejes se construyen.
       </div>
     </aside>
