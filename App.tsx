@@ -13,7 +13,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-gray-50 text-gray-800 font-sans">
+    <div className="bg-slate-900 text-gray-800 font-sans">
       <div className="min-h-screen lg:flex">
         <FrameworkColumn activeEjes={hoveredEjes} />
         <PlanColumn
